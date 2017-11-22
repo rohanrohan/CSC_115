@@ -1,0 +1,16 @@
+/*
+	 * A private helper method that is used primarly for debugging
+	 * and testing the array object during operations.
+	 */
+	private void printArray() {
+		System.out.println("Actual Array contents:");
+		for (int i=0; i<storage.length; i++) {
+			if (storage[i] != null) {
+				System.out.println(i+" : "+storage[i]);
+			} else {
+				System.out.println(i+" : null");
+			}
+		}
+		System.out.println("Count = "+count);
+	}
+	
